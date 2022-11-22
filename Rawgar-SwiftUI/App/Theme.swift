@@ -20,7 +20,6 @@ class Theme {
 
     UINavigationBar.appearance().standardAppearance = navigationAppearance
     UINavigationBar.appearance().compactAppearance = navigationAppearance
-    UINavigationBar.appearance().scrollEdgeAppearance = navigationAppearance
 
     UINavigationBar.appearance().tintColor = tintColor ?? titleColor ?? .black
 
@@ -30,7 +29,10 @@ class Theme {
     UITabBar.appearance().tintColor = tintColor
 
     UITabBar.appearance().standardAppearance = tabBarAppearance
-    UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+    if #available(iOS 15.0, *) {
+      UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+      UINavigationBar.appearance().scrollEdgeAppearance = navigationAppearance
+    }
 
   }
 }

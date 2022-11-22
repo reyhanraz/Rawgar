@@ -12,6 +12,17 @@ struct ContentView: View {
   @EnvironmentObject var favoritePresenter: FavoritePresenter
 
   var body: some View {
+    if #available(iOS 16.0, *) {
+      tabView
+        .tint(Color.CustomDarkPurple)
+    } else {
+      tabView
+        .accentColor(Color.CustomDarkPurple)
+      // Fallback on earlier versions
+    }
+  }
+
+  var tabView: some View {
     TabView {
       NavigationView {
         HomeView(presenter: homePresenter)
@@ -31,6 +42,5 @@ struct ContentView: View {
         Label("Profile", systemImage: "person.crop.circle.fill")
       }
     }
-    .tint(Color.CustomDarkPurple)
   }
 }

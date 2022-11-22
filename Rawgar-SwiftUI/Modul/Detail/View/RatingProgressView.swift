@@ -19,9 +19,15 @@ struct RatingProgressView: View {
         .foregroundColor(Color.CustomBorderColor)
         .font(.system(size: 14))
       Spacer()
-      ProgressView(value: percentage, total: 100)
-        .tint(Color.CustomWhite)
-        .padding(EdgeInsets(top: 0, leading: 4, bottom: 0, trailing: 4))
+      if #available(iOS 16.0, *) {
+        ProgressView(value: percentage, total: 100)
+          .tint(Color.CustomWhite)
+          .padding(EdgeInsets(top: 0, leading: 4, bottom: 0, trailing: 4))
+      } else {
+        ProgressView(value: percentage, total: 100)
+          .progressViewStyle(LinearProgressViewStyle(tint: Color.CustomWhite))
+          .padding(EdgeInsets(top: 0, leading: 4, bottom: 0, trailing: 4))
+      }
       Spacer()
       Text("\(ratingCount)")
         .frame(width: 50, alignment: .trailing)

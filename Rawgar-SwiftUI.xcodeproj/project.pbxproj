@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		112B7587397D5BED9299B98E /* Pods_Rawgar_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C74CD5A242918BF5D7E1E4 /* Pods_Rawgar_SwiftUI.framework */; };
 		4BE49AAA2923F1DA00F61C01 /* Rawgar_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE49AA92923F1DA00F61C01 /* Rawgar_SwiftUIApp.swift */; };
 		4BE49AAC2923F1DA00F61C01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE49AAB2923F1DA00F61C01 /* ContentView.swift */; };
 		4BE49AAE2923F1DC00F61C01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BE49AAD2923F1DC00F61C01 /* Assets.xcassets */; };
@@ -51,6 +52,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18C74CD5A242918BF5D7E1E4 /* Pods_Rawgar_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rawgar_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B85058974A62A05EC24A9F0 /* Pods-Rawgar-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rawgar-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-Rawgar-SwiftUI/Pods-Rawgar-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		4BE49AA62923F1DA00F61C01 /* Rawgar-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rawgar-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE49AA92923F1DA00F61C01 /* Rawgar_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rawgar_SwiftUIApp.swift; sourceTree = "<group>"; };
 		4BE49AAB2923F1DA00F61C01 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +93,7 @@
 		4BE49B25292C91CE00F61C01 /* DetailGameVw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameVw.swift; sourceTree = "<group>"; };
 		4BE49B29292C957B00F61C01 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		4BE49B2B292C96AD00F61C01 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		77F2C0236B2A95EFF0B807EB /* Pods-Rawgar-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rawgar-SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-Rawgar-SwiftUI/Pods-Rawgar-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,17 +105,37 @@
 				4BE49AC02923F35B00F61C01 /* RealmSwift in Frameworks */,
 				4BE49ABE2923F35B00F61C01 /* Realm in Frameworks */,
 				4BE49ABB2923F2D900F61C01 /* Alamofire in Frameworks */,
+				112B7587397D5BED9299B98E /* Pods_Rawgar_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14B6022C6B880A426CF2F759 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77F2C0236B2A95EFF0B807EB /* Pods-Rawgar-SwiftUI.debug.xcconfig */,
+				4B85058974A62A05EC24A9F0 /* Pods-Rawgar-SwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		43E42B2BB5C5CD5AADBD4DDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18C74CD5A242918BF5D7E1E4 /* Pods_Rawgar_SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4BE49A9D2923F1DA00F61C01 = {
 			isa = PBXGroup;
 			children = (
 				4BE49AA82923F1DA00F61C01 /* Rawgar-SwiftUI */,
 				4BE49AA72923F1DA00F61C01 /* Products */,
+				14B6022C6B880A426CF2F759 /* Pods */,
+				43E42B2BB5C5CD5AADBD4DDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -439,6 +463,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BE49AB42923F1DC00F61C01 /* Build configuration list for PBXNativeTarget "Rawgar-SwiftUI" */;
 			buildPhases = (
+				28B3A5C581B97F397003822D /* [CP] Check Pods Manifest.lock */,
 				4BE49AA22923F1DA00F61C01 /* Sources */,
 				4BE49AA32923F1DA00F61C01 /* Frameworks */,
 				4BE49AA42923F1DA00F61C01 /* Resources */,
@@ -507,6 +532,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28B3A5C581B97F397003822D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rawgar-SwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4BE49AA22923F1DA00F61C01 /* Sources */ = {
@@ -670,6 +720,7 @@
 		};
 		4BE49AB52923F1DC00F61C01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77F2C0236B2A95EFF0B807EB /* Pods-Rawgar-SwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -685,6 +736,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -700,6 +752,7 @@
 		};
 		4BE49AB62923F1DC00F61C01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B85058974A62A05EC24A9F0 /* Pods-Rawgar-SwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -715,6 +768,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
