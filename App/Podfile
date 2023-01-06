@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '15.0'
+use_frameworks!
+
+workspace 'App'
+
+target 'Rawgar-SwiftUI' do
+
+  # Pods for Rawgar-SwiftUI
+  pod 'SwiftLint'
+  pod 'RealmSwift'
+  pod 'Alamofire'
+  pod 'SDWebImageSwiftUI'
+
+end
+
+target 'Core' do
+  project '../Modul/Core/Core'
+
+  pod 'RealmSwift'
+
+end
+
+target 'Game' do
+  project '../Modul/Game/Game'
+
+  pod 'RealmSwift'
+  pod 'Alamofire'
+
+end
