@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		112B7587397D5BED9299B98E /* Pods_Rawgar_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C74CD5A242918BF5D7E1E4 /* Pods_Rawgar_SwiftUI.framework */; };
 		4B2458032968118B00C0D854 /* FavoriteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2458022968118B00C0D854 /* FavoriteRouter.swift */; };
-		4B69BFFB294F69BA006D815E /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B69BFFA294F69BA006D815E /* Core.framework */; };
-		4B69BFFC294F69BA006D815E /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B69BFFA294F69BA006D815E /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4BAFD132295DC1AF00B1E8ED /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFD131295DC1AF00B1E8ED /* .swiftlint.yml */; };
 		4BAFD13A2960A7E500B1E8ED /* Game.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAFD1392960A7E500B1E8ED /* Game.framework */; };
 		4BAFD13B2960A7E500B1E8ED /* Game.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAFD1392960A7E500B1E8ED /* Game.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -36,6 +34,65 @@
 		4BE49B2C292C96AD00F61C01 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE49B2B292C96AD00F61C01 /* EmptyView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4B245830296920BC00C0D854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B245824296920BA00C0D854 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5D797E9A5C5782CE845840781FA1CC81;
+			remoteInfo = Alamofire;
+		};
+		4B245832296920BC00C0D854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B245824296920BA00C0D854 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B354CD95A1BD0CA7485A9F75FCC4331A;
+			remoteInfo = Core;
+		};
+		4B245834296920BC00C0D854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B245824296920BA00C0D854 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 10059265F5C1AD2FBEC99E56302BA356;
+			remoteInfo = "Pods-Game";
+		};
+		4B245836296920BC00C0D854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B245824296920BA00C0D854 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BDA791900250D2F3AEDE9C035D410BFF;
+			remoteInfo = "Pods-Rawgar-SwiftUI";
+		};
+		4B245838296920BC00C0D854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B245824296920BA00C0D854 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 921BE4A82C4A7A5C72A0C6F8B8FEF200;
+			remoteInfo = Realm;
+		};
+		4B24583A296920BC00C0D854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B245824296920BA00C0D854 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 437919EE08EC6BFCCBAC3BD346309742;
+			remoteInfo = RealmSwift;
+		};
+		4B24583C296920BC00C0D854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B245824296920BA00C0D854 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0B214D775196BA7CA8E17E53048A493;
+			remoteInfo = SDWebImage;
+		};
+		4B24583E296920BC00C0D854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B245824296920BA00C0D854 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6B1B10F952F684F6767E6903C2F5E816;
+			remoteInfo = SDWebImageSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		4B69BFFD294F69BA006D815E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -44,7 +101,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				4BAFD13B2960A7E500B1E8ED /* Game.framework in Embed Frameworks */,
-				4B69BFFC294F69BA006D815E /* Core.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +110,7 @@
 /* Begin PBXFileReference section */
 		18C74CD5A242918BF5D7E1E4 /* Pods_Rawgar_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rawgar_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B2458022968118B00C0D854 /* FavoriteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRouter.swift; sourceTree = "<group>"; };
+		4B245824296920BA00C0D854 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		4B69BFFA294F69BA006D815E /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B85058974A62A05EC24A9F0 /* Pods-Rawgar-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rawgar-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-Rawgar-SwiftUI/Pods-Rawgar-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		4BAFD131295DC1AF00B1E8ED /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
@@ -90,7 +147,6 @@
 			files = (
 				112B7587397D5BED9299B98E /* Pods_Rawgar_SwiftUI.framework in Frameworks */,
 				4BAFD13A2960A7E500B1E8ED /* Game.framework in Frameworks */,
-				4B69BFFB294F69BA006D815E /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,9 +172,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4B245825296920BA00C0D854 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B245831296920BC00C0D854 /* Alamofire */,
+				4B245833296920BC00C0D854 /* Core */,
+				4B245835296920BC00C0D854 /* Pods-Game */,
+				4B245837296920BC00C0D854 /* Pods-Rawgar-SwiftUI */,
+				4B245839296920BC00C0D854 /* Realm */,
+				4B24583B296920BC00C0D854 /* RealmSwift */,
+				4B24583D296920BC00C0D854 /* SDWebImage */,
+				4B24583F296920BC00C0D854 /* SDWebImageSwiftUI */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4BE49A9D2923F1DA00F61C01 = {
 			isa = PBXGroup;
 			children = (
+				4B245824296920BA00C0D854 /* Pods.xcodeproj */,
 				4BAFD131295DC1AF00B1E8ED /* .swiftlint.yml */,
 				4BE49AA82923F1DA00F61C01 /* Rawgar-SwiftUI */,
 				4BE49AA72923F1DA00F61C01 /* Products */,
@@ -374,12 +446,85 @@
 			mainGroup = 4BE49A9D2923F1DA00F61C01;
 			productRefGroup = 4BE49AA72923F1DA00F61C01 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4B245825296920BA00C0D854 /* Products */;
+					ProjectRef = 4B245824296920BA00C0D854 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4BE49AA52923F1DA00F61C01 /* Rawgar-SwiftUI */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4B245831296920BC00C0D854 /* Alamofire */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = Alamofire;
+			path = Alamofire.framework;
+			remoteRef = 4B245830296920BC00C0D854 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4B245833296920BC00C0D854 /* Core */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = Core;
+			path = Core.framework;
+			remoteRef = 4B245832296920BC00C0D854 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4B245835296920BC00C0D854 /* Pods-Game */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = "Pods-Game";
+			path = Pods_Game.framework;
+			remoteRef = 4B245834296920BC00C0D854 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4B245837296920BC00C0D854 /* Pods-Rawgar-SwiftUI */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = "Pods-Rawgar-SwiftUI";
+			path = Pods_Rawgar_SwiftUI.framework;
+			remoteRef = 4B245836296920BC00C0D854 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4B245839296920BC00C0D854 /* Realm */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = Realm;
+			path = Realm.framework;
+			remoteRef = 4B245838296920BC00C0D854 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4B24583B296920BC00C0D854 /* RealmSwift */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = RealmSwift;
+			path = RealmSwift.framework;
+			remoteRef = 4B24583A296920BC00C0D854 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4B24583D296920BC00C0D854 /* SDWebImage */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = SDWebImage;
+			path = SDWebImage.framework;
+			remoteRef = 4B24583C296920BC00C0D854 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4B24583F296920BC00C0D854 /* SDWebImageSwiftUI */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = SDWebImageSwiftUI;
+			path = SDWebImageSwiftUI.framework;
+			remoteRef = 4B24583E296920BC00C0D854 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4BE49AA42923F1DA00F61C01 /* Resources */ = {

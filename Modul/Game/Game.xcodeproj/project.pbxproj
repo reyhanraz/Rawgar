@@ -13,8 +13,6 @@
 		4B69C020294F6E66006D815E /* Game.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B69C01F294F6E66006D815E /* Game.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BAFD136295E7A2B00B1E8ED /* GameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFD135295E7A2B00B1E8ED /* GameResponse.swift */; };
 		4BAFD138295E7AC800B1E8ED /* GetGamesRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFD137295E7AC800B1E8ED /* GetGamesRemoteDataSource.swift */; };
-		4BAFD13D2962F1A500B1E8ED /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAFD13C2962F1A500B1E8ED /* Core.framework */; };
-		4BAFD13E2962F1A500B1E8ED /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAFD13C2962F1A500B1E8ED /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4BAFD1412964527600B1E8ED /* GetGamesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFD1402964527600B1E8ED /* GetGamesRepository.swift */; };
 		4BAFD1432965D1E800B1E8ED /* GetDetailGameRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFD1422965D1E800B1E8ED /* GetDetailGameRemoteDataSource.swift */; };
 		4BAFD1452965D42500B1E8ED /* GetDetailGameLocaleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFD1442965D42500B1E8ED /* GetDetailGameLocaleDataSource.swift */; };
@@ -24,20 +22,6 @@
 		4BF59039295ACBD600197081 /* GetGamesLocaleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF59038295ACBD600197081 /* GetGamesLocaleDataSource.swift */; };
 		4BF5903B295ACD2E00197081 /* GameDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5903A295ACD2E00197081 /* GameDomainModel.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		4BAFD13F2962F1A600B1E8ED /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4BAFD13E2962F1A500B1E8ED /* Core.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4B2457FA2966708A00C0D854 /* UpdateFavoriteGameRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateFavoriteGameRepository.swift; sourceTree = "<group>"; };
@@ -66,7 +50,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CC27A3AE7D2EDFABDA50C61 /* Pods_Game.framework in Frameworks */,
-				4BAFD13D2962F1A500B1E8ED /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +192,6 @@
 				4B69C018294F6E66006D815E /* Sources */,
 				4B69C019294F6E66006D815E /* Frameworks */,
 				4B69C01A294F6E66006D815E /* Resources */,
-				4BAFD13F2962F1A600B1E8ED /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

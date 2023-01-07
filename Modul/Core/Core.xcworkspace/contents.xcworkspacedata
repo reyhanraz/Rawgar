@@ -2,12 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Rawgar-SwiftUI.xcodeproj">
+      location = "group:Core.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../Modul/Game/Game.xcodeproj">
    </FileRef>
 </Workspace>

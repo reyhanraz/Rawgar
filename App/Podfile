@@ -1,5 +1,6 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '15.0'
+
 use_frameworks!
 
 workspace 'App'
@@ -7,17 +8,11 @@ workspace 'App'
 target 'Rawgar-SwiftUI' do
 
   # Pods for Rawgar-SwiftUI
-  pod 'SwiftLint'
   pod 'RealmSwift'
   pod 'Alamofire'
   pod 'SDWebImageSwiftUI'
-
-end
-
-target 'Core' do
-  project '../Modul/Core/Core'
-
-  pod 'RealmSwift'
+  pod 'SwiftLint'
+  pod 'Core', :git =>'https://github.com/reyhanraz/Rawgar-Core.git'
 
 end
 
@@ -26,5 +21,6 @@ target 'Game' do
 
   pod 'RealmSwift'
   pod 'Alamofire'
+  pod 'Core', :git =>'https://github.com/reyhanraz/Rawgar-Core.git'
 
 end

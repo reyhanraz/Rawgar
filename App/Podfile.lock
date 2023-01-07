@@ -1,19 +1,22 @@
 PODS:
-  - Alamofire (5.6.2)
+  - Alamofire (5.6.4)
+  - Core (1.0.0):
+    - RealmSwift (~> 10.0)
   - Realm (10.33.0):
     - Realm/Headers (= 10.33.0)
   - Realm/Headers (10.33.0)
   - RealmSwift (10.33.0):
     - Realm (= 10.33.0)
-  - SDWebImage (5.14.1):
-    - SDWebImage/Core (= 5.14.1)
-  - SDWebImage/Core (5.14.1)
-  - SDWebImageSwiftUI (2.2.1):
+  - SDWebImage (5.14.3):
+    - SDWebImage/Core (= 5.14.3)
+  - SDWebImage/Core (5.14.3)
+  - SDWebImageSwiftUI (2.2.2):
     - SDWebImage (~> 5.10)
-  - SwiftLint (0.50.0)
+  - SwiftLint (0.50.3)
 
 DEPENDENCIES:
   - Alamofire
+  - Core (from `https://github.com/reyhanraz/Rawgar-Core.git`)
   - RealmSwift
   - SDWebImageSwiftUI
   - SwiftLint
@@ -27,14 +30,24 @@ SPEC REPOS:
     - SDWebImageSwiftUI
     - SwiftLint
 
+EXTERNAL SOURCES:
+  Core:
+    :git: https://github.com/reyhanraz/Rawgar-Core.git
+
+CHECKOUT OPTIONS:
+  Core:
+    :commit: a48b0b64004ed2f71be039df63882790c892366f
+    :git: https://github.com/reyhanraz/Rawgar-Core.git
+
 SPEC CHECKSUMS:
-  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  Core: 4a32f4ca8c3e4ec93a59989d245b9a784c548cb3
   Realm: d4f810e161fa2c2c589b9860b6eb09238deacd73
   RealmSwift: cef9946f09f2333a8f2ac8bac4f8de52fb9f5ac3
-  SDWebImage: e1b3c38f170c6100130fce6856e423ed9e5f4fce
-  SDWebImageSwiftUI: 2ecf5ab6f574526326b10ecb155e72a88059d0f0
-  SwiftLint: 9cbf846727f3312f3ba722f2d7108a162cd050a5
+  SDWebImage: 9c36e66c8ce4620b41a7407698dda44211a96764
+  SDWebImageSwiftUI: 54ded4115b4ac6cd60b78f61415f86d070892d98
+  SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
 
-PODFILE CHECKSUM: ff64d8b522da78c5edd156401400a22a6d28d5a0
+PODFILE CHECKSUM: 500f8f3157e25a10c051212eb3090b5630a5c291
 
 COCOAPODS: 1.11.3
