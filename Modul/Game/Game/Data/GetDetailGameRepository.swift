@@ -60,10 +60,4 @@ Transformer.Domain == [GameDomainModel] {
         }
       }.eraseToAnyPublisher()
   }
-
-  public func updateFavorite(id: Int) -> AnyPublisher<GameDomainModel, Error> {
-    return _localeDataSource.updateFavoriteGames(by: id)
-      .map {_mapper.transformEntityToDomain(entity: [$0]).first!}
-      .eraseToAnyPublisher()
-  }
 }

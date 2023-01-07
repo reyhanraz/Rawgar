@@ -1,0 +1,19 @@
+name: Build Project
+on: 
+  push:
+    branches: [ "main" ]
+jobs:
+  Build Project:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: CocoaPod Install
+      working-directory: ./App
+      run: pod install
+    - name: Build
+      working-directory: ./App
+      run: xcodebuild -workspace App.xcworkspace 
+                      -scheme Rawgar-SwiftUI 
+                      -configuration Debug 
+                      -sdk iphonesimulator 
+                      -destination 'platform=iOS Simulator,name=iPhone 14'
